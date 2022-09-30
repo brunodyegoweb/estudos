@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+
+        :root {
+            --boder: 8px; 
+        }
+
+        body {
+            background-color: rgb(173, 170, 170);
+        }
+        header {
+            text-align: center;
+            background-color: rgb(121, 119, 119);
+            margin-bottom: 5px;
+            height: 100px;
+            border-radius: var(--boder);
+        }
+        nav {
+            padding: 10px;
+           border-radius: var(--boder);
+        }
+
+        a {
+            margin: 5px;
+            text-decoration: none;
+            background-color: rgb(209, 206, 206);
+            padding: 4px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.429);
+            border-radius: var(--boder)
+            
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        main {
+            background-color: white;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px; 
+            border-radius: var(--boder);
+                  
+        }
+
+        footer {
+            background-color: rgb(53, 53, 53);
+            text-align: center;
+            color: white;
+            border-radius: var(--boder);
+        }
+
+        h1 {
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        
+            <nav>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </nav>
+    </header>
+    <main>
+        <section>
+            <p>Esporte Política e Tecnologia</p>
+        </section>
+        <section>
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa perspiciatis deserunt vel quo sapiente molestias maxime eos iste explicabo, officiis minima commodi unde quos consequatur. Vero placeat omnis sunt quam!</p>
+                <aside>
+                    <p>Artigo escrito por: José da Silva</p>
+                </aside>
+            </article>
+            <article></article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Bruno Dyego web
+    </footer>
+</body>
+</html>
