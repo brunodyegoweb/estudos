@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;  
+            background-image: url('img/irina-blok-1000.jpg'); 
+            background-position: center top;
+            background-repeat: no-repeat;   
+            
+            /*background-size: 100% 100%;  preenche toda a tela com a imagem, porém achata a imagem    */
+            
+            /*background-size: contain; faz com que a imagem seja 100% exibida*/
+            
+            background-size: cover /*preenche toda a viewport, porem sem xibir a imagem  total, vai adaptando a imagem de acordo com as dimenções*/;
+            background-attachment: fixed;/*este comando fixa a imagem de fundo mesmo que rolemos a barra mesmo assim a imagem fica fixa, caso queremos que a imagem role junto com a barra usaremos o scroll*/
+
+            /*
+            shorthand - background: color > iamge > position > repeat . [size] > attachment
+            
+            resumiriamos então em uma linha apenas:
+
+            background: black url(url('img/irina-blok-1000.jpg') center top no-rept fixed;
+            background-size: cover; este funcionou apenas em outra linha
+            */
+        }
+
+        main {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid red;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem no fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores est tempora. Sint sit facere reiciendis molestias tempore voluptatem pariatur eius quasi quia, voluptas iste, laudantium voluptates non libero quaerat!</p>
+    </main>
+</body>
+</html>
