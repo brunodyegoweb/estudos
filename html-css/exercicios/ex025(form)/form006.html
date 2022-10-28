@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadstro.php" autocomplete="on" method="post">
+        <label for="icor">Cor:</label>
+         <input type="color" name="cor" id="icor" value="#00ff00"><br>     
+
+         <label for="isatisfacao">Nível de Satisfação:</label> 
+         <input type="range" name="satisfacao" id="isatsifacao" min="1" max="5" value="3"><br>
+
+         <!--para comando que enviam foto o fromulário deve esta configurado para o methodo POST-->
+
+        <label for="">Foto do Perfil:</label> <input type="file" name="foto" id="ifoto"><br><br>
+         
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
