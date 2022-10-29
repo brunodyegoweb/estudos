@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuário</title>
+</head>
+<body>
+    <h1>Estudo em Fomulário</h1>
+
+    <form action="cadstro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iestado">Estado: </label>
+            <select name="estado" id="iestado" >
+            
+                <option value="" selected>----Escolha um estado----</option>
+                <optgroup label="Região Norte">
+                    <option value="AC">Acre</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="AM">Amazônas</option>
+                    <option value="AP">Amapa</option>
+                    <option value="PA">Pará</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Região Norsdeste"></optgroup>
+                <option value="MA">Maranhão</option>
+                <option value="PI">Piauí</option>
+                <option value="CE">Ceará</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="AL">Alagoas</option>
+                <option value="SE">Sergipe</option>
+                <option value="BA">Bahia</option>
+                <optgroup label="Região Suldeste"></optgroup>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <optgroup label="Região Centroeste">
+                    <option value="MT">MatoGrosso</option>
+                    <option value="GO">Goias</option>
+                    <option value="MS">Matogrosso do Sul</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprofissao">Profissão: </label>
+            <input type="text" name="profissao" id="iprofissao" list="lprofissao">
+            <datalist id="lprofissao">
+                <option value="ADM">Fotografo</option>
+                <option value="TEC">Tecnico em Eletrônica</option>
+                <option value="DES">Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            Mensagem:<br> 
+            <textarea name="mesagem" id="imensagem" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
