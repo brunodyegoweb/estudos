@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*Todas as demias mídas*/
+
+/*Typical Device breakpointd
+------------------------------
+pequenas telas: até 600px
+celular: de  600px até 769px
+tablet: 768px até 992px
+desktop´: 992px até 1200
+grandes telas: acima 1200px
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/icon-print.png);
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    #phone { display: none;}
+    #tablet { display: none;}
+    #impressora { display: block;}
+    #pc { display: none;}
+    #tv { display: none;}
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {/*CELULAR*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);             
+    }  
+    
+    #phone { display: none;}
+    #tablet { display: block;}
+    #impressora { display: none;}
+    #pc { display: none;}
+    #tv { display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {/*TABLET*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    
+    #phone { display: none;}
+    #tablet { display: block;}
+    #impressora { display: none;}
+    #pc { display: none;}
+    #tv { display: none;}
+}
+
+@media screen  and (min-width:992px) and (max-width: 1200px){/*DESKTOP*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone { display: none;}
+    #tablet { display: none;}
+    #impressora { display: none;}
+    #pc { display: block;}
+    #tv { display: none;}
+    
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) {/*PC*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone { display: none;}
+    #tablet { display: none;}
+    #impressora { display: none;}
+    #pc { display: block;}
+    #tv { display: none;}
+}
+
+@media screen and (min-width:1200px){
+    body {
+        background-image: url(../imagens/back-tv.jpg);/*GRANDES TELAS*/
+    }
+
+    #phone { display: none;}
+    #tablet { display: none;}
+    #impressora { display: none;}
+    #pc { display: none;}
+    #tv { display: block;}
+}
