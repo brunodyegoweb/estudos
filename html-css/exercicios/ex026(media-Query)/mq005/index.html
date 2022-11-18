@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
 
+    <!--Estilos-->
     <link rel="stylesheet" href="estilos/style.css">
+
+    <!--BootStrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+
 </head>
 <body>
-    <header>
+    <header>       
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="bi bi-list" onclick="clickMenu()"></i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Cessão1</a></li>
                 <li><a href="#">Cessão2</a></li>
@@ -35,5 +41,14 @@
             </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+           if(itens.style.display == 'block'){
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+           }
+        }         
+    </script>
 </body>
 </html>
